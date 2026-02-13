@@ -1,68 +1,163 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Namrata Patil | Business Analyst</title>
     <meta charset="UTF-8">
+    <title>Namrata Patil | Business Analyst</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
             background-color: #f4f6f8;
             color: #333;
         }
-        header {
-            background-color: #0a192f;
-            color: white;
-            padding: 50px 20px;
+
+        /* Navigation */
+        nav {
+            background: white;
+            padding: 15px;
             text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         }
-        section {
-            padding: 50px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-        h1 {
-            font-size: 40px;
-            margin-bottom: 10px;
-        }
-        h2 {
-            margin-bottom: 15px;
-            color: #0a192f;
-        }
-        .btn {
-            display: inline-block;
-            padding: 12px 25px;
-            margin-top: 20px;
-            background-color: #007acc;
-            color: white;
+
+        nav a {
+            margin: 0 15px;
             text-decoration: none;
-            border-radius: 6px;
+            color: #0a192f;
             font-weight: bold;
         }
+
+        /* Header */
+        header {
+            background: #0a192f;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        header p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        /* Sections */
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        h2 {
+            color: #0a192f;
+        }
+
+        /* Skills Grid */
         .skills {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
         }
+
         .card {
             background: white;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
             text-align: center;
         }
+
+        /* Footer */
         footer {
-            text-align: center;
-            padding: 20px;
             background: #0a192f;
             color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
 
+<!-- Navigation -->
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- Header -->
 <header>
     <h1>Namrata Patil</h1>
-    <p style="font-size:20px;">Business Analyst</p>
+    <p>Business Analyst | Data Analyst | BI Developer</p>
+</header>
+
+<!-- About Section -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        Detail-oriented Business Analyst with 2+ years of experience building KPI dashboards,
+        predictive models, and SQL-driven reporting solutions. Skilled in Power BI, Tableau,
+        SQL, and Python to translate complex data into business insights.
+    </p>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+        <h3>EV Charging Analytics</h3>
+        <p>Built interactive dashboard analyzing 10K+ EV charging station records across the US.</p>
+    </div>
+
+    <div class="card">
+        <h3>Customer Churn Prediction</h3>
+        <p>Developed logistic regression model achieving 92% accuracy for churn forecasting.</p>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="card">SQL</div>
+        <div class="card">Power BI</div>
+        <div class="card">Python</div>
+        <div class="card">Tableau</div>
+        <div class="card">Excel</div>
+        <div class="card">Data Modeling</div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:namratap1908@gmail.com">namratap1908@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/patil1namrata" target="_blank">
+        linkedin.com/in/patil1namrata</a></p>
+    <p>GitHub: <a href="https://github.com/Namratap1908/ev-charging-analytics" target="_blank">
+        github.com/Namratap1908</a></p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Namrata Patil | Business Analyst</p>
+</footer>
+
+</body>
+</html>
